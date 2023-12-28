@@ -1,5 +1,7 @@
+from re import sub
+
 def solution(s):
-    pass
+    return sub(r"([a-z])([A-Z])", r"\1 \2", s)
 
 print(solution("helloWorld"))
 print(solution("camelCase"))
